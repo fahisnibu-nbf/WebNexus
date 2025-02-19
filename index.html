@@ -3,40 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my SEO-friendly website created with HTML and hosted on GitHub.">
-    <meta name="keywords" content="SEO, HTML, GitHub, Web Development">
-    <meta name="author" content="Your Name">
-    <title>My Website</title>
+    <title>My GitHub Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                  <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center">
+            <h1>Welcome to My Website</h1>
+            <p>Explore amazing content</p>
+            <a href="#gallery" class="btn btn-primary">View Gallery</a>
+        </div>
     </header>
 
-    <section>
-        <h2>About This Website</h2>
-        <p>This is a simple website created using HTML and hosted on GitHub. It’s designed to be SEO-friendly and easy to customize.</p>
+    <!-- About Section -->
+    <section id="about" class="container my-5 text-center">
+        <h2>About Us</h2>
+        <p>We create awesome digital experiences with beautiful designs.</p>
     </section>
 
-    <section>
-        <h2>Services</h2>
-        <p>Here are some services we offer:</p>
-        <ul>
-            <li>Web Development</li>
-            <li>SEO Optimization</li>
-            <li>Content Writing</li>
-        </ul>
+    <!-- Image Gallery -->
+    <section id="gallery" class="container my-5">
+        <h2 class="text-center">Gallery</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/image1.jpg" class="img-fluid rounded" alt="Image 1">
+            </div>
+            <div class="col-md-4">
+                <img src="images/image2.jpg" class="img-fluid rounded" alt="Image 2">
+            </div>
+            <div class="col-md-4">
+                <img src="images/image3.jpg" class="img-fluid rounded" alt="Image 3">
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5 text-center">
+        <h2>Contact Us</h2>
+        <p>Email: contact@mywebsite.com</p>
+        <p>Follow us on <a href="#">Instagram</a> & <a href="#">Twitter</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2025 MyWebsite. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
